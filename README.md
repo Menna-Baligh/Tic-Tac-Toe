@@ -18,3 +18,6 @@ To run the game, simply execute the `main.py`
 To make a move, simply click on the space where you'd like to place your symbol. 
 The game will print the current state of the board after each move, and will let you know when the game is over.
 
+## Note
+- if you want to open the PDF i pushed `Tic-Tac-Toe.pdf` download it firstly on your device cuz github does not fully support opening PDF files directly in the browser or can [see it directly on canva](https://www.canva.com/design/DAGlox5a5T0/ZiXOye7cXr4q4bKcSlZJ6A/edit?utm_content=DAGlox5a5T0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) 
+
