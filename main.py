@@ -1,31 +1,25 @@
 import tkinter as tk
 from tkinter import messagebox
-import random
 from pygame import mixer
 
-# Initialize mixer for sounds
 mixer.init()
 win_sound = "win.mp3"
 lose_sound = "lose.mp3"
 draw_sound = "draw.mp3"
 
-# GUI setup
 BG_COLOR = "#f7e1f0"
 BUTTON_COLOR = "#c084bf"
 BTN_FONT = ("Comic Sans MS", 18, "bold")
 TITLE_FONT = ("Comic Sans MS", 26, "bold")
 TIMER_FONT = ("Comic Sans MS", 20, "bold")
 
-# Window
 window = tk.Tk()
 window.title("Tic Tac Toe")
 window.configure(bg=BG_COLOR)
 
-# Title
 title_label = tk.Label(window, text="Tic Tac Toe", font=TITLE_FONT, bg=BG_COLOR, fg="#4b0049")
 title_label.grid(row=0, column=0, columnspan=3, pady=10)
 
-# Timer
 seconds = 0
 timer_running = False
 timer_label = tk.Label(window, text="Time: 0s", font=TIMER_FONT, bg=BG_COLOR, fg="#4b0049")
@@ -43,7 +37,6 @@ def reset_timer():
     seconds = 0
     timer_label.config(text="Time: 0s")
 
-# Game logic
 board = [""] * 9
 buttons = []
 
@@ -143,23 +136,17 @@ def reset_board():
     timer_running = True
     start_timer()
 
-# Board buttons
 for i in range(9):
-    btn = tk.Button(window, text="", font=BTN_FONT, width=6, height=3, bg=BUTTON_COLOR,
-
-
-command=lambda i=i: on_click(i))
+    btn = tk.Button(window, text="", font=BTN_FONT, width=6, height=3, bg=BUTTON_COLOR, command=lambda i=i: on_click(i) )
     btn.grid(row=(i//3)+2, column=i%3, padx=5, pady=5)
     buttons.append(btn)
 
-# Control buttons
 btn_restart = tk.Button(window, text="Restart", font=BTN_FONT, bg="#ab52a0", fg="white", command=reset_board)
 btn_restart.grid(row=5, column=0, columnspan=1, pady=15)
 
 btn_exit = tk.Button(window, text="Exit", font=BTN_FONT, bg="#ab52a0", fg="white", command=window.quit)
 btn_exit.grid(row=5, column=2, columnspan=1)
 
-# Start the game
 timer_running = True
 start_timer()
 window.mainloop()
