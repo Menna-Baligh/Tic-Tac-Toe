@@ -87,3 +87,8 @@ Where:
 ## Note
 If you want to view the design PDF I pushed (`Tic-Tac-Toe.pdf`), download it first to your device.  
 Alternatively, you can [view it directly on Canva](https://www.canva.com/design/DAGlox5a5T0/ZiXOye7cXr4q4bKcSlZJ6A/edit?utm_content=DAGlox5a5T0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton).
+
+---
+## Team Members
+- [Hagar Elbakry](https://github.com/Hagar-Elbakry)
+- [Menna Hamada](https://github.com/MennaHamadaElsba3i)
