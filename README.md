@@ -53,7 +53,7 @@ In this game:
 - It guarantees the best possible outcome (win or draw).
 
 **Time Complexity:**  
-`O(b^d)`  
+`O(b^m)`  
 Where:
 - `b` = branching factor (possible moves)
 - `m` = max depth of the game tree (up to 9 for Tic Tac Toe)
@@ -80,7 +80,7 @@ Where:
 | Predicts Future    | Yes               | No                 |
 | Guarantees Win/Draw| Yes               | No (can lose)      |
 | AI Difficulty      | High (unbeatable) | Easy               |
-| Time Complexity    | Higher            | Very Low           |
+| Time Complexity    | Higher`O(b^m)`    | Very Low   `O(n)`  |
 
 ---
 
