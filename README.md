@@ -56,7 +56,7 @@ In this game:
 `O(b^d)`  
 Where:
 - `b` = branching factor (possible moves)
-- `d` = depth of the game tree (up to 9 for Tic Tac Toe)
+- `m` = max depth of the game tree (up to 9 for Tic Tac Toe)
 
 ---
 
